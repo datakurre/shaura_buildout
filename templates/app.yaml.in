@@ -1,0 +1,8 @@
+application: ${buildout:appspotname}
+version: ${buildout:appspotversion}
+runtime: python
+api_version: 1
+
+handlers:
+- url: .*
+  script: app.py
